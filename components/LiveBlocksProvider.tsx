@@ -2,8 +2,6 @@
 
 import {
   LiveblocksProvider,
-  RoomProvider,
-  ClientSideSuspense,
 } from "@liveblocks/react/suspense";
 
 
@@ -19,7 +17,7 @@ function LiveBlocksProvider({children}:{
         }
 
   return (
-    <LiveblocksProvider throttle={16} authEndpoint={"/auth-endpoint"}>{children}</LiveblocksProvider>
+    <LiveblocksProvider throttle={16} authEndpoint={"/api/auth-endpoint"}>{children}</LiveblocksProvider>
         
   )
 }
